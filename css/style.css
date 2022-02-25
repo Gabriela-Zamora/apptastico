@@ -23,7 +23,21 @@ nav ul{
     margin: -8px -43px 30px
 }header img{
     margin: 31px 0 0 161px;
-}.img1{
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+    @keyframes slidein{
+        from{
+            margin-left: 0;
+            width: 2%;
+        }to{
+            margin-left: 9%;
+            width: 9%;
+        }
+}
+.img1{
     margin: 88px 99px 94px 186px;
 }h1{
     color: white;
@@ -45,7 +59,15 @@ nav ul{
     border: none;
     height: 29px;
     margin-top: 35px;
-}
+}.caja button{
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: change-color;
+}@keyframes change-color {
+    from { background:rgb(41, 117, 231); } 
+    to { background: rgb(123, 41, 231); } 
+  }
 .caja2{
     display:flex;
     justify-content: center;
@@ -68,5 +90,234 @@ nav ul{
     background-color: rgb(238 240 243);
     margin: -31px;
     justify-items: center;
+ }main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+ }.card{
+     text-align: center;
+     margin: 126px;
+ }.card p{
+    color:rgb(163, 163, 163);
+ }h2{
+    color:rgb(163, 163, 163);
  }
-
+ .logo{
+    float: right;
+}.fechas{
+    color:rgb(163, 163, 163);
+}.img5{
+    float: left;
+    margin-right: 10px;
+}.img6{
+    float: left;
+    margin-right: 10px;
+}h4{
+    font-size: 20px;
+}h6{
+    font-size: 20px;
+}.imagenes{
+    display: flex;
+    width: 1694px;
+    justify-content: center;
+    align-items: center;
+}.imgs4 {
+    margin-right: 51px;
+    width: 420px;
+}.tercero{
+    margin-left: 128px;
+}.cuarto{
+    margin: 111px 128px;
+}.cajaCuarto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    margin: 0 -869px 0 -698px;
+}.cuartoUno{
+    text-align: left;
+    margin: -6px 1825px 0 -600px
+}h5{
+    font-size: 20px;
+}
+.quinto {
+    margin: -580px 121px 0 1323px;
+    float: right;
+}.quinto img{
+    margin: 47px 5px 0 -7px;
+    float: left;
+}.cajaCuarto img{
+    width: 220px;
+}.parrafo{
+    float: left;
+    margin: 8px -305px
+}footer{
+    color:rgb(163, 163, 163);
+    margin: 0 122px;
+}hr{
+    color:rgb(238, 236, 236);
+    margin: 0 122px 20px;
+}@media(max-width:1200px){
+    header{    width: 1254px;
+    }nav ul{
+        margin: -76px 0 0 426px;
+    }.primero{
+        margin: -8px -60px 30px;
+    }.caja {
+        margin: -501px 81px 30px 700px;
+    }.segundo{
+        margin: -29px -61px;
+        padding: 0 110px;
+    }.card{
+        margin: 126px 43px 40px 107px;
+    }.card p{
+        font-size: 14px;
+    }.tercero {
+        margin-left: 110px;
+    }.imagenes{
+        width: 1073px;
+    }.cajaCuarto{
+        margin: 0px -1513px 0 -698px;
+    }.img6{
+        margin: 0 12px 0 -18px;
+    }.parrafo{
+        margin: 8px -291px;
+    }.quinto{
+        margin: -580px 45px 0 739px;
+    }@keyframes slidein{
+        from{
+            margin-left: 0;
+            width: 5%;
+        }to{
+            margin-left: 12%;
+            width: 12%;
+        }
+    }
+    }@media(max-width:992px){
+        nav ul {
+            margin: -76px 0 0 216px;
+        }.primero {
+            margin: -8px -156px 30px;
+        }.img1 {
+            margin: 88px 99px 70px 224px;
+        }.segundo {
+            margin: -29px -214px;
+            padding: 0 72px 0 219px;
+        }.card {
+            margin: 128px -78px 40px 79px;
+        }header img {
+            margin: 31px 0 0 74px;
+        }.tercero {
+            margin-left: 54px;
+        }.cuarto {
+            margin: 111px 67px;
+        }.cajaCuarto {
+            margin: -93px -1513px 0 -660px;
+        }.parrafo {
+            margin: 8px -260px;
+        }.quinto {
+            margin: -565px -1px 0 639px;
+        }.cuartoUno {
+            text-align: left;
+            margin: -13px 1825px -15px -600px;
+        }footer {
+            margin: 0 -42px 0 57px;
+        }hr{    
+            margin: 0 -37px 20px 56px;
+        }.imgs4 {
+            margin-right: 73px;
+            width: 194px;
+        }@keyframes slidein{
+            from{
+                margin-left: 0;
+                width: 5%;
+            }to{
+                margin-left: 7%;
+                width: 12%;
+            }
+        }
+    }@media(max-width:576px){
+        nav ul {
+            margin: -71px 0 0 -442px;
+            width: 311px;
+        }header img {
+            width: 99px;
+            margin: 31px 0 0 29px;
+        }@keyframes slidein{
+            from{
+                margin-left: 0;
+                width: 2%;
+            }to{
+                margin-left: 3%;
+                width: 7%;
+            }
+        }.img1 {
+            margin: 80px 79px 136px 172px;
+            width: 217px;
+        }.caja {
+            margin: -402px 172px 30px 426px;
+        }h1 {
+            font-size: 28px;
+        }.p1 {
+            font-size: 9px;
+        }.p2 {
+            font-size: 9px;
+        }.segundo {
+            margin: -29px -165px;
+            padding: 0 0 0 132px;
+        }.caja2 p {
+            font-size: 11px;
+            margin: -16px -46px 78px 41px;
+        }button{
+            width: 106px;
+            height: 16px;
+            font-size: 11px;
+        }.caja img {
+            height: 9px;
+            margin: -12px -28px 0 59px;
+        }.segundo img{
+            width: 38px;
+        }.card img{
+            width: 83px;
+        }h2{
+            font-size: 18px;
+        }.card p {
+            font-size: 11px;
+        }.card {
+            margin: 90px -2px 40px 15px;
+        }.imgs4 {
+            margin: 0 199px 0 -204px;
+            width: 140px;
+        }.tercero {
+            margin-left: 17px;
+        }.imagenes {
+            width: 950px;
+        }h5 {
+            font-size: 15px;
+        }.cuartoUno {
+            text-align: left;
+            margin: -13px 1870px -15px -630px;
+            font-size: 11px;
+        }.cajaCuarto img {
+            width: 135px;
+        }.cajaCuarto {
+            margin: -12px -1695px 0 -660px;
+        }.cuarto {
+            margin: 111px 43px;
+        }.quinto {
+            margin: -462px -1px 0 365px;
+        }.quinto p{
+            font-size: 11px;
+        }.parrafo {
+            margin: 8px -141px;
+        }hr {
+            margin: -18px 8px 20px 24px;
+        }footer {
+            margin: 18px 5px 0 22px;
+        }
+    }
+    
+    
